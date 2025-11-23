@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <a href="usuarios.html">👤 Usuários</a>
+    <a href="livros.html">📚 Livros</a>
+    <a href="emprestimos.html">🔄 Empréstimos</a>
+</nav>
+
+<h2>Cadastro de Livros</h2>
+
+<div class="form">
+    <div class="form-group">
+        <label for="livroTitulo">Título</label>
+        <input id="livroTitulo" type="text" placeholder="Título" onblur="validarCampo('livroTitulo', 'errorTitulo')">
+        <span class="error-message" id="errorTitulo"></span>
+    </div>
+    <div class="form-group">
+        <label for="livroAutor">Autor</label>
+        <input id="livroAutor" type="text" placeholder="Autor" onblur="validarCampo('livroAutor', 'errorAutor')">
+        <span class="error-message" id="errorAutor"></span>
+    </div>
+    <div class="form-group">
+        <label for="livroAno">Ano</label>
+        <input id="livroAno" type="number" placeholder="Ano" onblur="validarCampo('livroAno', 'errorAno')">
+        <span class="error-message" id="errorAno"></span>
+    </div>
+    <div class="form-group">
+        <label for="livroGenero">Gênero</label>
+        <input id="livroGenero" type="text" placeholder="Gênero" onblur="validarCampo('livroGenero', 'errorGenero')">
+        <span class="error-message" id="errorGenero"></span>
+    </div>
+    <div class="form-group">
+        <button onclick="addLivro()">Cadastrar</button>
+    </div>
+</div>
+
+<h3>Lista de Livros</h3>
+<table>
+    <thead>
+        <tr><th>ID</th><th>Título</th><th>Autor</th><th>Ano</th><th>Gênero</th><th>Status</th><th>Ações</th></tr>
+    </thead>
+    <tbody id="listaLivros"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>

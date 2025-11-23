@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Empréstimos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <a href="usuarios.html">👤 Usuários</a>
+    <a href="livros.html">📚 Livros</a>
+    <a href="emprestimos.html">🔄 Empréstimos</a>
+</nav>
+
+<h1>Registro de Empréstimos</h1>
+
+<div class="form">
+    <div class="form-group">
+        <label for="selectUsuarios">Usuário</label>
+        <select id="selectUsuarios"></select>
+    </div>
+    <div class="form-group">
+        <label for="selectLivros">Livro</label>
+        <select id="selectLivros"></select>
+    </div>
+    <div class="form-group">
+        <label for="dataEmprestimo">Data do Empréstimo</label>
+        <input type="date" id="dataEmprestimo">
+    </div>
+    <div class="form-group">
+        <button onclick="addEmprestimo()">Confirmar Empréstimo</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Histórico de Empréstimos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Livro</th>
+                    <th>Data Empréstimo</th>
+                    <th>Data Devolução</th>
+                    <th>Status</th>
+                    <th>Alerta</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-emprestimos"></tbody>
+        </table>
+    </div>
+
+    
+<script src="app.js"></script>
+</body>
+</html>

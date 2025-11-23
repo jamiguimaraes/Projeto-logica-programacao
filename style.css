@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+.login-container {
+    width: 330px;
+    margin: 120px auto;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+#formLogin input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+#formLogin button {
+    width: 95%;
+    padding: 12px;
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+#formLogin button:hover {
+    background: #45a049;
+}
+
+.erro {
+    color: red;
+    margin-top: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: #f5f5ff;
+}
+.navbar {
+    background: #6b7cff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 12px 12px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+.navbar-vertical {
+    background: #6b7cff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-vertical a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-vertical a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 25px;
+    background: #6b7cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group:last-child {
+    justify-content: center;
+}
+
+.form-group:last-child button {
+    margin-top: 22px;
+}
+
+.form input, .form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    min-width: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    min-height: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #6b7cff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #bbb;
+    padding: 10px;
+    text-align: center;
+}
+
+td input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}

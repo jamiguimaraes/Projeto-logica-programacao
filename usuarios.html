@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <a href="usuarios.html">👤 Usuários</a>
+    <a href="livros.html">📚 Livros</a>
+    <a href="emprestimos.html">🔄 Empréstimos</a>
+</nav>
+
+<h2>Cadastro de Usuários</h2>
+
+<div class="form">
+    <div class="form-group">
+        <label for="userNome">Nome completo</label>
+        <input id="userNome" type="text" placeholder="Nome completo" onblur="validarCampo('userNome', 'errorNome')">
+        <span class="error-message" id="errorNome"></span>
+    </div>
+    <div class="form-group">
+        <label for="userEmail">E-mail</label>
+        <input id="userEmail" type="email" placeholder="E-mail" onblur="validarCampo('userEmail', 'errorEmail')">
+        <span class="error-message" id="errorEmail"></span>
+    </div>
+    <div class="form-group">
+        <button onclick="addUsuario()">Cadastrar</button>
+    </div>
+</div>
+
+<h3>Lista de Usuários</h3>
+<table>
+    <thead>
+        <tr><th>ID</th><th>Nome</th><th>Email</th><th>Ações</th></tr>
+    </thead>
+    <tbody id="listaUsuarios"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
