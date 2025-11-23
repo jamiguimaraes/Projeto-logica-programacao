@@ -152,6 +152,14 @@ h1, h2, h3 {
     margin-top: 22px;
 }
 
+.btn-cadastrar-usuario {
+    margin-top: 4px !important;
+}
+
+.btn-confirmar-emprestimo {
+    margin-top: 22px !important;
+}
+
 .form input, .form select {
     padding: 10px;
     border-radius: 6px;
